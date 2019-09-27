@@ -1,15 +1,15 @@
 /* global google */
 /* global $ */
 var map;
-// Simple Map --
 
+// Simple Map --
 let mapOptions = {
     'center': {lat: 1.3521, lng: 103.8198},
     'zoom': 12,
     'disableDefaultUI': true
 };
 
-// Adding a Marker
+// Adding a Marker --
 function testMarker() {
   let myLatLng = {lat: 1.3187, lng: 103.7064};
 
@@ -24,7 +24,13 @@ function testMarker() {
 }
 
 $(function(){
-    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    
+  // Init Map --
+  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  
+  // Add Layer of Transit
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
 
   
 });
