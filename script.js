@@ -1,11 +1,30 @@
 /* global google */
 /* global $ */
+var map;
+// Simple Map --
 
-let map;
+let mapOptions = {
+    'center': {lat: 1.3521, lng: 103.8198},
+    'zoom': 12,
+    'disableDefaultUI': true
+};
 
-$(function() {
-map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
-});
+// Adding a Marker
+function testMarker() {
+  let myLatLng = {lat: 1.3187, lng: 103.7064};
+
+  map.panTo(myLatLng);
+  map.setZoom(15);
+
+  let marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+$(function(){
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  
 });
