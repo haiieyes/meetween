@@ -1,6 +1,8 @@
 /* global google */
 /* global $ */
 /* global axios */
+/* global jQuery */
+
 var map;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
 
@@ -35,14 +37,13 @@ function makeInfoWindowEvent(map, infowindow, marker) {
 // Adding a Test Group of Markers Function --
 function showAllMRT(){
   
-  // Test Array of Way Points --
   axios.get('data/mrtsg.json')
     .then(function(response){
       
     let arr = response.data;
     
     for (let eachStation = 0; eachStation<= arr.length; eachStation++){
-      var myLatlng = new google.maps.LatLng(arr[eachStation].latitude, arr[eachStation].longitude);
+      let myLatlng = new google.maps.LatLng(arr[eachStation].latitude, arr[eachStation].longitude);
 
       // Create Marker
       let marker = new google.maps.Marker({
@@ -68,14 +69,84 @@ axios.get('data/mrtsg.json')
 
     let arr = response.data;
     
-    for (let eachStation = 0; eachStation<= arr.length; eachStation++){
-      $('#startSelect').append('<option value="' + arr[eachStation].stationName + '">' + arr[eachStation].stationName + '</option>');
-      $('#endSelect').append('<option value="' + arr[eachStation].stationName + '">' + arr[eachStation].stationName + '</option>');
-      
-      console.log(arr[eachStation].stationName);
+    for (let eachStation = 0; eachStation< arr.length; eachStation++){
+      // for (let eachStation2 = 0; eachStation2<= arr.length; eachStation2++){
+      //   if (arr[eachStation].stationName != arr[eachStation2].stationName){
+          $('#startSelect').append('<option value="' + eachStation+ '">' + arr[eachStation].stationName + '</option>');
+          $('#endSelect').append('<option value="' + eachStation + '">' + arr[eachStation].stationName + '</option>');
+          
+          console.log(arr[eachStation].stationName);
+        // }
+      // }
     }
     
   });
+
+// When MRT is changed, place marker --
+// Person A
+$("#startSelect").change(function(){
+  // clearMarkers();
+  
+  // Find index
+  axios.get('data/mrtsg.json').then(function(response){
+    
+    let arr = response.data;
+    let index = $("#startSelect").val();
+
+    // Create Marker
+    let myLatLng = {lat: arr[index].latitude, lng: arr[index].longitude};
+    // let myLatlng = new google.maps.LatLng(arr[index].latitude, arr[index].longitude);
+    let marker = new google.maps.Marker({
+      position: {lat: arr[index].latitude, lng: arr[index].longitude},
+      map: map,
+    });
+    
+    // Fly to Marker
+    map.panTo(myLatLng);
+    map.setZoom(15);
+    
+    // Create InfoWindow
+    let infowindow = new google.maps.InfoWindow({
+      content: ('<h1>' + arr[index].stationName + '</h1>')
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  });
+});
+
+// Person B
+$("#endSelect").change(function(){
+  // clearMarkers();
+  
+  // Find index
+  axios.get('data/mrtsg.json').then(function(response){
+    
+    let arr = response.data;
+    let index = $("#endSelect").val();
+
+    // Create Marker
+    let myLatLng = {lat: arr[index].latitude, lng: arr[index].longitude};
+    // let myLatlng = new google.maps.LatLng(arr[index].latitude, arr[index].longitude);
+    let marker = new google.maps.Marker({
+      position: {lat: arr[index].latitude, lng: arr[index].longitude},
+      map: map,
+    });
+    
+    // Fly to Marker
+    map.panTo(myLatLng);
+    map.setZoom(15);
+    
+    // Create InfoWindow
+    let infowindow = new google.maps.InfoWindow({
+      content: ('<h1>' + arr[index].stationName + '</h1>')
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  });
+});
+
 
 
 $(function(){
@@ -109,5 +180,8 @@ $(function(){
     $('#showButtonRight').css("animation-name", "showReverse");
   });
   
+  
+
+
   
 });

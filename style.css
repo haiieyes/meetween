@@ -30,7 +30,7 @@ html, body {
 /* Top Console */
 #topConsole {
 	width: 40%;
-	height: 200px;
+	height: 100px;
 	background-color: #38A1F3;
 	position: absolute;
 	z-index: 100;
@@ -53,24 +53,18 @@ html, body {
 	align-items: center;
 }
 
-.consoleTop {
-	display: flex;
-	flex-direction: row;
-}
-
-.consoleTop p{
-	width:200px;
-	text-align: center;
-}
-
 #startSelect {
 	width: 200px;
+	margin-top: 20px;
 	margin-bottom: 20px;
+	padding: 50px;
 }
 
 #endSelect {
 	width: 200px;
+	margin-top: 20px;
 	margin-bottom: 20px;
+	padding: 50px;
 }
 
 /* Show Buttons */
@@ -130,7 +124,7 @@ html, body {
 
 #personA {
 	height: 100vh;
-	flex: 15;
+	flex: 20;
 	background-color: #657786;
 	box-shadow: 0 0 20px rgb(0, 0, 0);
 	z-index: 90;
@@ -154,12 +148,12 @@ html, body {
 
 #map {
     height: 100vh;
-    flex: 70;
+    flex: 60;
 }
 
 #personB {
 	height: 100vh;
-	flex: 15;
+	flex: 20;
 	background-color: #657786;
 	box-shadow: 0 0 20px rgb(0, 0, 0);
 	z-index: 90;
@@ -178,13 +172,13 @@ html, body {
 
 /* Animations --- */
 @keyframes hide {
-	0% {flex: 15;}
+	0% {flex: 20;}
 	100% {flex:0;}
 }
 
 @keyframes hideReverse {
 	0% {flex:0;}
-	100% {flex: 15;}
+	100% {flex: 20;}
 }
 
 @keyframes show {
