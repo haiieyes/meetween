@@ -21,6 +21,51 @@ time, mark, audio, video {
 }
 
 /* Styles --- */
+/* Top Console */
+#topConsole {
+	width: 40%;
+	height: 200px;
+	background-color: #38A1F3;
+	position: absolute;
+	z-index: 100;
+	margin-left: 50%;
+	transform: translateX(-50%); 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#logo {
+	border: 2px solid black;
+	width: 300px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.consoleTop {
+	display: flex;
+	flex-direction: row;
+}
+
+.consoleTop p{
+	width:200px;
+	text-align: center;
+}
+
+#startSelect {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+#endSelect {
+	width: 200px;
+	margin-bottom: 20px;
+}
 
 /* Show Buttons */
 #showButtons {

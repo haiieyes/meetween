@@ -1,8 +1,6 @@
 /* global google */
 /* global $ */
-
 var map;
-var flightPath;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
 
 // Simple Map --
@@ -67,28 +65,8 @@ function testGroupMarker() {
     marker.addListener('click', function() {
       infowindow.open(map, marker);
     });
-    
-    // Connecting WayPoints Together
-    let travelPath = new google.maps.Polyline({
-      path: markerArr,
-      strokeColor: "#FF0000",
-      strokeOpacity: 1.0,
-      strokeWeight: 2
-    });
-  
   }
-  
-  
-  
-  
-  
 }
-
-
-
-
-
-
 
 $(function(){
     
@@ -121,6 +99,7 @@ $(function(){
     $('#showButtonRight').css("animation-name", "showReverse");
   });
   
+  console.log(data);
   
   
 });
