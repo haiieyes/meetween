@@ -1,5 +1,6 @@
 /* global google */
 /* global $ */
+/* global axios */
 var map;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
 
@@ -32,40 +33,39 @@ function makeInfoWindowEvent(map, infowindow, marker) {
 }
 
 // Adding a Test Group of Markers Function --
-function testGroupMarker() {
+function showAllMRT(){
+  
   // Test Array of Way Points --
-  let markerArr = [
-    {
-      lat: 1.3521, 
-      lng: 103.8198
+  axios.get('data/mrtsg.json')
+    .then(function(response){
       
-    },
-    {
-      lat: 1.3621, 
-      lng: 103.8298
-    },
-    {
-      lat: 1.3721, 
-      lng: 103.8398
-    },
-  ];
-
-  for (let eachPlace of markerArr){
-    // Create Marker
-    let marker = new google.maps.Marker({
-      position: eachPlace,
-      map: map,
-      title: ('Test :' + eachPlace) 
-    })
-    
-    // Create InfoWindow
-    let infowindow = new google.maps.InfoWindow({
-      content: 'Test'
-    })
-    marker.addListener('click', function() {
-      infowindow.open(map, marker);
+      
+      let arr = response.data;
+      console.log(arr);
+      
+      for (let eachStation = 0; eachStation<= arr.length; eachStation++){
+        console.log(arr[eachStation].latitude)
+        console.log(arr[eachStation].longitude)
+        var myLatlng = new google.maps.LatLng(arr[eachStation].latitude, arr[eachStation].longitude)
+        console.log(myLatlng)
+        let x = arr[eachStation].stationName;
+        console.log(x)
+        // Create Marker
+        let marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+        });
+        
+        // Create InfoWindow
+        let infowindow = new google.maps.InfoWindow({
+          content: ('Test :' + arr[eachStation].stationName)
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
     });
-  }
+    
 }
 
 $(function(){
@@ -98,8 +98,6 @@ $(function(){
     $('#personB').css("animation-name", "hideReverse");
     $('#showButtonRight').css("animation-name", "showReverse");
   });
-  
-  console.log(data);
   
   
 });
