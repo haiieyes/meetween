@@ -39,34 +39,44 @@ function showAllMRT(){
   axios.get('data/mrtsg.json')
     .then(function(response){
       
+    let arr = response.data;
+    
+    for (let eachStation = 0; eachStation<= arr.length; eachStation++){
+      var myLatlng = new google.maps.LatLng(arr[eachStation].latitude, arr[eachStation].longitude);
+
+      // Create Marker
+      let marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+      });
       
-      let arr = response.data;
-      console.log(arr);
-      
-      for (let eachStation = 0; eachStation<= arr.length; eachStation++){
-        console.log(arr[eachStation].latitude)
-        console.log(arr[eachStation].longitude)
-        var myLatlng = new google.maps.LatLng(arr[eachStation].latitude, arr[eachStation].longitude)
-        console.log(myLatlng)
-        let x = arr[eachStation].stationName;
-        console.log(x)
-        // Create Marker
-        let marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-        });
-        
-        // Create InfoWindow
-        let infowindow = new google.maps.InfoWindow({
-          content: ('Test :' + arr[eachStation].stationName)
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      }
-    });
+      // Create InfoWindow
+      let infowindow = new google.maps.InfoWindow({
+        content: ('<h1>' + arr[eachStation].stationName + '</h1>')
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+  });
     
 }
+
+// Add MRT Stations to selectors --
+axios.get('data/mrtsg.json')
+  .then(function(response){
+
+    let arr = response.data;
+    
+    for (let eachStation = 0; eachStation<= arr.length; eachStation++){
+      $('#startSelect').append('<option value="' + arr[eachStation].stationName + '">' + arr[eachStation].stationName + '</option>');
+      $('#endSelect').append('<option value="' + arr[eachStation].stationName + '">' + arr[eachStation].stationName + '</option>');
+      
+      console.log(arr[eachStation].stationName);
+    }
+    
+  });
+
 
 $(function(){
     

@@ -7,7 +7,7 @@
     "y": 46918.1131,
     "latitude": 1.440585001,
     "longitude": 103.8009982,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 16,
@@ -17,7 +17,7 @@
     "y": 33190.002,
     "latitude": 1.316432612,
     "longitude": 103.882893,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 33,
@@ -27,7 +27,7 @@
     "y": 39105.772,
     "latitude": 1.369933175,
     "longitude": 103.8495535,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 81,
@@ -37,7 +37,7 @@
     "y": 41113.8766,
     "latitude": 1.388092704,
     "longitude": 103.9054179,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 80,
@@ -47,7 +47,7 @@
     "y": 40220.9693,
     "latitude": 1.380017897,
     "longitude": 103.7726667,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 153,
@@ -57,7 +57,7 @@
     "y": 36108.7003,
     "latitude": 1.342828338,
     "longitude": 103.8797462,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 115,
@@ -67,7 +67,7 @@
     "y": 29368.625,
     "latitude": 1.281873788,
     "longitude": 103.8590733,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 115,
@@ -77,7 +77,7 @@
     "y": 29368.625,
     "latitude": 1.281873788,
     "longitude": 103.8590733,
-    "color": "OTHERS"
+    "line": "CIRCLE"
   },
   {
     "objID": 140,
@@ -87,7 +87,7 @@
     "y": 35931.2359,
     "latitude": 1.341223176,
     "longitude": 103.77581,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 37,
@@ -97,7 +97,7 @@
     "y": 34024.7048,
     "latitude": 1.323979969,
     "longitude": 103.9299587,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 143,
@@ -107,7 +107,7 @@
     "y": 35214.6804,
     "latitude": 1.334742117,
     "longitude": 103.9179554,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 149,
@@ -117,7 +117,7 @@
     "y": 35421.0409,
     "latitude": 1.33660783,
     "longitude": 103.9322077,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 100,
@@ -127,7 +127,7 @@
     "y": 31247.3368,
     "latitude": 1.29886427,
     "longitude": 103.8503799,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 99,
@@ -137,7 +137,7 @@
     "y": 32884.7382,
     "latitude": 1.313672233,
     "longitude": 103.8629702,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 109,
@@ -147,7 +147,7 @@
     "y": 37046.3699,
     "latitude": 1.35130868,
     "longitude": 103.84915,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 158,
@@ -157,7 +157,7 @@
     "y": 36994.433,
     "latitude": 1.350838988,
     "longitude": 103.8481398,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 178,
@@ -167,7 +167,7 @@
     "y": 33517.6089,
     "latitude": 1.319395706,
     "longitude": 103.861679,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 34,
@@ -177,7 +177,7 @@
     "y": 35641.9191,
     "latitude": 1.338604054,
     "longitude": 103.7060994,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 159,
@@ -187,7 +187,7 @@
     "y": 33852.4484,
     "latitude": 1.322423979,
     "longitude": 103.8161362,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 185,
@@ -197,7 +197,7 @@
     "y": 33817.7525,
     "latitude": 1.322110193,
     "longitude": 103.8149876,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 182,
@@ -207,7 +207,7 @@
     "y": 35848.0687,
     "latitude": 1.340471684,
     "longitude": 103.8467942,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 93,
@@ -217,7 +217,7 @@
     "y": 31025.9016,
     "latitude": 1.296861687,
     "longitude": 103.8506629,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 183,
@@ -227,7 +227,7 @@
     "y": 40537.2069,
     "latitude": 1.382877858,
     "longitude": 103.8931042,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 103,
@@ -237,7 +237,7 @@
     "y": 31323.2495,
     "latitude": 1.299550746,
     "longitude": 103.8568623,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 111,
@@ -247,7 +247,7 @@
     "y": 31424.3503,
     "latitude": 1.300465076,
     "longitude": 103.8557007,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 32,
@@ -257,7 +257,7 @@
     "y": 36795.0141,
     "latitude": 1.349034109,
     "longitude": 103.74959,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 117,
@@ -267,7 +267,7 @@
     "y": 35102.4802,
     "latitude": 1.333728882,
     "longitude": 103.8306903,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 35,
@@ -277,7 +277,7 @@
     "y": 37870.6512,
     "latitude": 1.358761857,
     "longitude": 103.7519164,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 47,
@@ -287,7 +287,7 @@
     "y": 39987.9068,
     "latitude": 1.377909898,
     "longitude": 103.763034,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 171,
@@ -297,7 +297,7 @@
     "y": 40108.6838,
     "latitude": 1.379002117,
     "longitude": 103.7615559,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 28,
@@ -307,7 +307,7 @@
     "y": 32167.2655,
     "latitude": 1.307183467,
     "longitude": 103.7902028,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 124,
@@ -317,7 +317,7 @@
     "y": 32090.7692,
     "latitude": 1.306491669,
     "longitude": 103.7906645,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 127,
@@ -327,7 +327,7 @@
     "y": 35538.768,
     "latitude": 1.337674508,
     "longitude": 103.8395281,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 172,
@@ -337,7 +337,7 @@
     "y": 39043.5835,
     "latitude": 1.369369831,
     "longitude": 103.764714,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 180,
@@ -347,7 +347,7 @@
     "y": 37711.015,
     "latitude": 1.357314545,
     "longitude": 103.9883212,
-    "color": "OTHERS"
+    "line": "GREEN"
   },
   {
     "objID": 70,
@@ -357,7 +357,7 @@
     "y": 42018.8886,
     "latitude": 1.396277631,
     "longitude": 103.8937792,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 131,
@@ -367,7 +367,7 @@
     "y": 29643.4786,
     "latitude": 1.284359578,
     "longitude": 103.8434242,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 132,
@@ -377,7 +377,7 @@
     "y": 29686.5359,
     "latitude": 1.284748969,
     "longitude": 103.8444484,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 2,
@@ -387,7 +387,7 @@
     "y": 36056.3019,
     "latitude": 1.342352821,
     "longitude": 103.7326244,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 65,
@@ -397,7 +397,7 @@
     "y": 40753.8693,
     "latitude": 1.38483636,
     "longitude": 103.7445797,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 19,
@@ -407,7 +407,7 @@
     "y": 40811.9589,
     "latitude": 1.385361693,
     "longitude": 103.744367,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 95,
@@ -417,7 +417,7 @@
     "y": 30591.8478,
     "latitude": 1.292936243,
     "longitude": 103.852581,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 95,
@@ -427,7 +427,7 @@
     "y": 30591.8478,
     "latitude": 1.292936243,
     "longitude": 103.852581,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 157,
@@ -437,7 +437,7 @@
     "y": 30088.7038,
     "latitude": 1.288386024,
     "longitude": 103.8465519,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 15,
@@ -447,7 +447,7 @@
     "y": 33026.6075,
     "latitude": 1.314954492,
     "longitude": 103.7653168,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 8,
@@ -457,7 +457,7 @@
     "y": 31642.6034,
     "latitude": 1.302438735,
     "longitude": 103.7983136,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 83,
@@ -467,7 +467,7 @@
     "y": 41821.5783,
     "latitude": 1.394493046,
     "longitude": 103.9004726,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 55,
@@ -477,7 +477,7 @@
     "y": 41757.0642,
     "latitude": 1.393909226,
     "longitude": 103.9125574,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 59,
@@ -487,7 +487,7 @@
     "y": 42351.1334,
     "latitude": 1.399281985,
     "longitude": 103.9059403,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 154,
@@ -497,7 +497,7 @@
     "y": 32299.8905,
     "latitude": 1.30838264,
     "longitude": 103.888648,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 58,
@@ -507,7 +507,7 @@
     "y": 43009.3794,
     "latitude": 1.405234836,
     "longitude": 103.9085809,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 144,
@@ -517,7 +517,7 @@
     "y": 31229.3143,
     "latitude": 1.298701307,
     "longitude": 103.8461119,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 164,
@@ -527,7 +527,7 @@
     "y": 31340.3479,
     "latitude": 1.299705459,
     "longitude": 103.8454851,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 165,
@@ -537,7 +537,7 @@
     "y": 31244.9618,
     "latitude": 1.298842816,
     "longitude": 103.8462358,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 29,
@@ -547,7 +547,7 @@
     "y": 32634.1186,
     "latitude": 1.311405293,
     "longitude": 103.7786522,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 123,
@@ -557,7 +557,7 @@
     "y": 29100.1876,
     "latitude": 1.27944619,
     "longitude": 103.8528356,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 125,
@@ -567,7 +567,7 @@
     "y": 30634.4621,
     "latitude": 1.293321608,
     "longitude": 103.8554985,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 1,
@@ -577,7 +577,7 @@
     "y": 33560.0776,
     "latitude": 1.319778952,
     "longitude": 103.9032339,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 18,
@@ -587,7 +587,7 @@
     "y": 35193.6223,
     "latitude": 1.334549778,
     "longitude": 103.9615134,
-    "color": "OTHERS"
+    "line": "GREEN"
   },
   {
     "objID": 122,
@@ -597,7 +597,7 @@
     "y": 35285.6654,
     "latitude": 1.335382137,
     "longitude": 103.9623407,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 48,
@@ -607,7 +607,7 @@
     "y": 40718.8826,
     "latitude": 1.384520796,
     "longitude": 103.7708268,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 44,
@@ -617,7 +617,7 @@
     "y": 42117.5716,
     "latitude": 1.397170196,
     "longitude": 103.8892882,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 151,
@@ -627,7 +627,7 @@
     "y": 32739.6107,
     "latitude": 1.31235984,
     "longitude": 103.8541717,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 121,
@@ -637,7 +637,7 @@
     "y": 33309.1617,
     "latitude": 1.317510612,
     "longitude": 103.8075929,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 73,
@@ -647,7 +647,7 @@
     "y": 41533.2289,
     "latitude": 1.391885888,
     "longitude": 103.8762959,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 120,
@@ -657,7 +657,7 @@
     "y": 30541.2748,
     "latitude": 1.292478928,
     "longitude": 103.8443255,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 98,
@@ -667,7 +667,7 @@
     "y": 33750.9518,
     "latitude": 1.321505838,
     "longitude": 103.8718904,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 23,
@@ -677,7 +677,7 @@
     "y": 33530.3675,
     "latitude": 1.319505215,
     "longitude": 103.6605988,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 101,
@@ -687,7 +687,7 @@
     "y": 27555.0595,
     "latitude": 1.26547264,
     "longitude": 103.821446,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 101,
@@ -697,7 +697,7 @@
     "y": 27555.0595,
     "latitude": 1.26547264,
     "longitude": 103.821446,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 161,
@@ -707,7 +707,7 @@
     "y": 29442.573,
     "latitude": 1.282542157,
     "longitude": 103.7818234,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 136,
@@ -717,7 +717,7 @@
     "y": 38266.7899,
     "latitude": 1.362344869,
     "longitude": 103.7674369,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 187,
@@ -727,7 +727,7 @@
     "y": 32681.5744,
     "latitude": 1.31183479,
     "longitude": 103.7962016,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 177,
@@ -737,7 +737,7 @@
     "y": 39256.1311,
     "latitude": 1.371292292,
     "longitude": 103.8923636,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 114,
@@ -747,7 +747,7 @@
     "y": 31970.4313,
     "latitude": 1.305403642,
     "longitude": 103.8554713,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 62,
@@ -757,7 +757,7 @@
     "y": 40960.202,
     "latitude": 1.386703025,
     "longitude": 103.7645235,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 38,
@@ -767,7 +767,7 @@
     "y": 34438.2764,
     "latitude": 1.327717173,
     "longitude": 103.6784167,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 20,
@@ -777,7 +777,7 @@
     "y": 35038.9472,
     "latitude": 1.33315262,
     "longitude": 103.7423112,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 20,
@@ -787,7 +787,7 @@
     "y": 35038.9472,
     "latitude": 1.33315262,
     "longitude": 103.7423112,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 54,
@@ -797,7 +797,7 @@
     "y": 42384.6619,
     "latitude": 1.399584853,
     "longitude": 103.9164619,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 141,
@@ -807,7 +807,7 @@
     "y": 35239.5458,
     "latitude": 1.334967302,
     "longitude": 103.9084393,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 26,
@@ -817,7 +817,7 @@
     "y": 32643.3302,
     "latitude": 1.31148891,
     "longitude": 103.8713766,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 68,
@@ -827,7 +827,7 @@
     "y": 40658.9821,
     "latitude": 1.383978902,
     "longitude": 103.9021539,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 57,
@@ -837,7 +837,7 @@
     "y": 40064.5711,
     "latitude": 1.378602766,
     "longitude": 103.7490799,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 31,
@@ -847,7 +847,7 @@
     "y": 33699.3568,
     "latitude": 1.321038249,
     "longitude": 103.9129282,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 104,
@@ -857,7 +857,7 @@
     "y": 30650.0972,
     "latitude": 1.293462633,
     "longitude": 103.7846438,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 3,
@@ -867,7 +867,7 @@
     "y": 44352.568,
     "latitude": 1.41738337,
     "longitude": 103.83298,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 137,
@@ -877,7 +877,7 @@
     "y": 35316.6349,
     "latitude": 1.335665121,
     "longitude": 103.7838201,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 119,
@@ -887,7 +887,7 @@
     "y": 38027.2795,
     "latitude": 1.360179171,
     "longitude": 103.8850503,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 4,
@@ -897,7 +897,7 @@
     "y": 45214.5479,
     "latitude": 1.425177699,
     "longitude": 103.7621874,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 45,
@@ -907,7 +907,7 @@
     "y": 42232.8408,
     "latitude": 1.398212828,
     "longitude": 103.881242,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 130,
@@ -917,7 +917,7 @@
     "y": 28313.6298,
     "latitude": 1.272332732,
     "longitude": 103.8029471,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 39,
@@ -927,7 +927,7 @@
     "y": 36267.1619,
     "latitude": 1.344259249,
     "longitude": 103.7209802,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 163,
@@ -937,7 +937,7 @@
     "y": 32186.4342,
     "latitude": 1.30735702,
     "longitude": 103.8628215,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 67,
@@ -947,7 +947,7 @@
     "y": 41554.6829,
     "latitude": 1.392079839,
     "longitude": 103.8800158,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 168,
@@ -957,7 +957,7 @@
     "y": 32168.8611,
     "latitude": 1.303916484,
     "longitude": 103.8524167,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 169,
@@ -967,7 +967,7 @@
     "y": 32124.8312,
     "latitude": 1.307198223,
     "longitude": 103.8485807,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 162,
@@ -977,7 +977,7 @@
     "y": 37079.9444,
     "latitude": 1.351612171,
     "longitude": 103.8641434,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 94,
@@ -987,7 +987,7 @@
     "y": 34286.1222,
     "latitude": 1.326345372,
     "longitude": 103.8902718,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 105,
@@ -997,7 +997,7 @@
     "y": 34256.4317,
     "latitude": 1.326076883,
     "longitude": 103.8893356,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 128,
@@ -1007,7 +1007,7 @@
     "y": 28766.3819,
     "latitude": 1.276427355,
     "longitude": 103.8545925,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 129,
@@ -1017,7 +1017,7 @@
     "y": 28735.7843,
     "latitude": 1.276150637,
     "longitude": 103.8550886,
-    "color": "OTHERS"
+    "line": "CIRCLE"
   },
   {
     "objID": 150,
@@ -1027,7 +1027,7 @@
     "y": 28203.4939,
     "latitude": 1.271336711,
     "longitude": 103.8628525,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 36,
@@ -1037,7 +1037,7 @@
     "y": 46025.7686,
     "latitude": 1.432514421,
     "longitude": 103.77409,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 160,
@@ -1047,7 +1047,7 @@
     "y": 36758.7136,
     "latitude": 1.348707263,
     "longitude": 103.8394214,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 138,
@@ -1057,7 +1057,7 @@
     "y": 34344.8585,
     "latitude": 1.326876715,
     "longitude": 103.8832341,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 69,
@@ -1067,7 +1067,7 @@
     "y": 42089.0886,
     "latitude": 1.396912053,
     "longitude": 103.9089277,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 118,
@@ -1077,7 +1077,7 @@
     "y": 32058.7418,
     "latitude": 1.306201905,
     "longitude": 103.8825153,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 133,
@@ -1087,7 +1087,7 @@
     "y": 32877.5173,
     "latitude": 1.313607102,
     "longitude": 103.8378098,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 191,
@@ -1097,7 +1097,7 @@
     "y": 32735.2072,
     "latitude": 1.3123201,
     "longitude": 103.8379841,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 52,
@@ -1107,7 +1107,7 @@
     "y": 43743.0854,
     "latitude": 1.411870458,
     "longitude": 103.9002935,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 126,
@@ -1117,7 +1117,7 @@
     "y": 31347.1516,
     "latitude": 1.299766835,
     "longitude": 103.8636292,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 147,
@@ -1127,7 +1127,7 @@
     "y": 33633.1535,
     "latitude": 1.320440791,
     "longitude": 103.8438228,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 42,
@@ -1137,7 +1137,7 @@
     "y": 42683.4018,
     "latitude": 1.402286677,
     "longitude": 103.9127036,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 108,
@@ -1147,7 +1147,7 @@
     "y": 31346.4085,
     "latitude": 1.299759879,
     "longitude": 103.7874693,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 113,
@@ -1157,7 +1157,7 @@
     "y": 31813.1134,
     "latitude": 1.303981012,
     "longitude": 103.8322417,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 156,
@@ -1167,7 +1167,7 @@
     "y": 29135.382,
     "latitude": 1.28140498,
     "longitude": 103.839125,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 188,
@@ -1177,7 +1177,7 @@
     "y": 29316.7727,
     "latitude": 1.279764543,
     "longitude": 103.8395732,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 155,
@@ -1187,7 +1187,7 @@
     "y": 28742.7658,
     "latitude": 1.276213523,
     "longitude": 103.7913607,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 14,
@@ -1197,7 +1197,7 @@
     "y": 39443.3983,
     "latitude": 1.372983774,
     "longitude": 103.9492348,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 9,
@@ -1207,7 +1207,7 @@
     "y": 33375.7341,
     "latitude": 1.318112082,
     "longitude": 103.8930446,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 152,
@@ -1217,7 +1217,7 @@
     "y": 33300.3402,
     "latitude": 1.317430268,
     "longitude": 103.8921633,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 76,
@@ -1227,7 +1227,7 @@
     "y": 39792.4936,
     "latitude": 1.376142883,
     "longitude": 103.7712881,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 63,
@@ -1237,7 +1237,7 @@
     "y": 39970.2513,
     "latitude": 1.377750334,
     "longitude": 103.7666882,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 90,
@@ -1247,7 +1247,7 @@
     "y": 40066.3155,
     "latitude": 1.378618844,
     "longitude": 103.7580559,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 7,
@@ -1257,7 +1257,7 @@
     "y": 35529.4973,
     "latitude": 1.337586882,
     "longitude": 103.6973586,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 176,
@@ -1267,7 +1267,7 @@
     "y": 34842.7289,
     "latitude": 1.331379525,
     "longitude": 103.869046,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 102,
@@ -1277,7 +1277,7 @@
     "y": 30586.9146,
     "latitude": 1.292891552,
     "longitude": 103.860846,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 184,
@@ -1287,7 +1287,7 @@
     "y": 30623.0174,
     "latitude": 1.293218051,
     "longitude": 103.8609921,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 50,
@@ -1297,7 +1297,7 @@
     "y": 43004.9202,
     "latitude": 1.405194701,
     "longitude": 103.9023911,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 106,
@@ -1307,7 +1307,7 @@
     "y": 42933.2694,
     "latitude": 1.404546728,
     "longitude": 103.902052,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 71,
@@ -1317,7 +1317,7 @@
     "y": 44293.5561,
     "latitude": 1.41684852,
     "longitude": 103.9066284,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 21,
@@ -1327,7 +1327,7 @@
     "y": 30804.6785,
     "latitude": 1.294860933,
     "longitude": 103.8058913,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 186,
@@ -1337,7 +1337,7 @@
     "y": 29617.6126,
     "latitude": 1.284125611,
     "longitude": 103.8514572,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 186,
@@ -1347,7 +1347,7 @@
     "y": 29617.6126,
     "latitude": 1.284125611,
     "longitude": 103.8514572,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 89,
@@ -1357,7 +1357,7 @@
     "y": 40687.1255,
     "latitude": 1.384233561,
     "longitude": 103.897176,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 5,
@@ -1367,7 +1367,7 @@
     "y": 30218.8196,
     "latitude": 1.289562726,
     "longitude": 103.8168209,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 46,
@@ -1377,7 +1377,7 @@
     "y": 40962.4782,
     "latitude": 1.386723922,
     "longitude": 103.8905227,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 60,
@@ -1387,7 +1387,7 @@
     "y": 41825.1114,
     "latitude": 1.394524496,
     "longitude": 103.9161415,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 167,
@@ -1397,7 +1397,7 @@
     "y": 31805.9862,
     "latitude": 1.306800025,
     "longitude": 103.8496427,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 82,
@@ -1407,7 +1407,7 @@
     "y": 41487.1568,
     "latitude": 1.391468497,
     "longitude": 103.9059522,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 43,
@@ -1417,7 +1417,7 @@
     "y": 43493.447,
     "latitude": 1.409612685,
     "longitude": 103.9048099,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 51,
@@ -1427,7 +1427,7 @@
     "y": 44188.8482,
     "latitude": 1.415901719,
     "longitude": 103.9021353,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 91,
@@ -1437,7 +1437,7 @@
     "y": 41078.4025,
     "latitude": 1.387772131,
     "longitude": 103.7696171,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 30,
@@ -1447,7 +1447,7 @@
     "y": 47854.1998,
     "latitude": 1.449050821,
     "longitude": 103.8200504,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 92,
@@ -1457,7 +1457,7 @@
     "y": 41502.6997,
     "latitude": 1.391609364,
     "longitude": 103.8954243,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 116,
@@ -1467,7 +1467,7 @@
     "y": 41512.1277,
     "latitude": 1.391694626,
     "longitude": 103.8954664,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 61,
@@ -1477,7 +1477,7 @@
     "y": 40516.7226,
     "latitude": 1.382692296,
     "longitude": 103.7623879,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 145,
@@ -1487,7 +1487,7 @@
     "y": 36967.5123,
     "latitude": 1.350595256,
     "longitude": 103.8723572,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 148,
@@ -1497,7 +1497,7 @@
     "y": 36869.3924,
     "latitude": 1.349707875,
     "longitude": 103.8735637,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 10,
@@ -1507,7 +1507,7 @@
     "y": 36150.3959,
     "latitude": 1.343202895,
     "longitude": 103.9533387,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 173,
@@ -1517,7 +1517,7 @@
     "y": 34777.1434,
     "latitude": 1.330786387,
     "longitude": 103.7972561,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 112,
@@ -1527,7 +1527,7 @@
     "y": 31401.6698,
     "latitude": 1.300260055,
     "longitude": 103.8390737,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 53,
@@ -1537,7 +1537,7 @@
     "y": 42993.1699,
     "latitude": 1.405088585,
     "longitude": 103.8971904,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 66,
@@ -1547,7 +1547,7 @@
     "y": 40252.0686,
     "latitude": 1.380298287,
     "longitude": 103.7453173,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 110,
@@ -1557,7 +1557,7 @@
     "y": 31687.0547,
     "latitude": 1.30284063,
     "longitude": 103.8753395,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 170,
@@ -1567,7 +1567,7 @@
     "y": 33591.6608,
     "latitude": 1.320065557,
     "longitude": 103.8260263,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 72,
@@ -1577,7 +1577,7 @@
     "y": 43365.1308,
     "latitude": 1.408452426,
     "longitude": 103.8985387,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 166,
@@ -1587,7 +1587,7 @@
     "y": 35291.0164,
     "latitude": 1.335433322,
     "longitude": 103.88818,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 96,
@@ -1597,7 +1597,7 @@
     "y": 37586.6178,
     "latitude": 1.356191483,
     "longitude": 103.9546005,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 11,
@@ -1607,7 +1607,7 @@
     "y": 37266.9909,
     "latitude": 1.353301356,
     "longitude": 103.9451175,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 142,
@@ -1617,7 +1617,7 @@
     "y": 37463.3697,
     "latitude": 1.355077429,
     "longitude": 103.9430298,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 97,
@@ -1627,7 +1627,7 @@
     "y": 36406.0143,
     "latitude": 1.345515305,
     "longitude": 103.938408,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 134,
@@ -1637,7 +1637,7 @@
     "y": 34234.9609,
     "latitude": 1.325883209,
     "longitude": 103.8073292,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 40,
@@ -1647,7 +1647,7 @@
     "y": 34379.4144,
     "latitude": 1.327187135,
     "longitude": 103.9463161,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 107,
@@ -1657,7 +1657,7 @@
     "y": 28776.7576,
     "latitude": 1.276521247,
     "longitude": 103.8458611,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 77,
@@ -1667,7 +1667,7 @@
     "y": 43842.6721,
     "latitude": 1.412770894,
     "longitude": 103.9065554,
-    "color": "OTHERS"
+    "line": "P-LRT"
   },
   {
     "objID": 64,
@@ -1677,7 +1677,7 @@
     "y": 39852.4608,
     "latitude": 1.376684679,
     "longitude": 103.7537352,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 190,
@@ -1687,7 +1687,7 @@
     "y": 29414.5867,
     "latitude": 1.282289536,
     "longitude": 103.8482991,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 189,
@@ -1697,7 +1697,7 @@
     "y": 28138.9667,
     "latitude": 1.270753211,
     "longitude": 103.8097544,
-    "color": "YELLOW"
+    "line": "YELLOW"
   },
   {
     "objID": 85,
@@ -1707,7 +1707,7 @@
     "y": 40254.525,
     "latitude": 1.380321008,
     "longitude": 103.760161,
-    "color": "OTHERS"
+    "line": "BP-LRT"
   },
   {
     "objID": 56,
@@ -1717,7 +1717,7 @@
     "y": 42133.9003,
     "latitude": 1.397318155,
     "longitude": 103.8756226,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 135,
@@ -1727,7 +1727,7 @@
     "y": 29846.251,
     "latitude": 1.286193393,
     "longitude": 103.827021,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 174,
@@ -1737,7 +1737,7 @@
     "y": 34980.8638,
     "latitude": 1.332628987,
     "longitude": 103.8474979,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 74,
@@ -1747,7 +1747,7 @@
     "y": 41252.6183,
     "latitude": 1.389347953,
     "longitude": 103.8858287,
-    "color": "OTHERS"
+    "line": "S-LRT"
   },
   {
     "objID": 25,
@@ -1757,7 +1757,7 @@
     "y": 33698.6818,
     "latitude": 1.321026553,
     "longitude": 103.6491245,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 22,
@@ -1767,7 +1767,7 @@
     "y": 35848.0658,
     "latitude": 1.340463766,
     "longitude": 103.6369324,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 27,
@@ -1777,7 +1777,7 @@
     "y": 34689.7988,
     "latitude": 1.329989089,
     "longitude": 103.6396662,
-    "color": "GREEN"
+    "line": "GREEN"
   },
   {
     "objID": 139,
@@ -1787,7 +1787,7 @@
     "y": 34685.4833,
     "latitude": 1.329956826,
     "longitude": 103.8992348,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 179,
@@ -1797,7 +1797,7 @@
     "y": 35988.4036,
     "latitude": 1.341737484,
     "longitude": 103.9614367,
-    "color": "BLUE"
+    "line": "BLUE"
   },
   {
     "objID": 24,
@@ -1807,27 +1807,7 @@
     "y": 46507.9219,
     "latitude": 1.436875128,
     "longitude": 103.7864999,
-    "color": "RED"
-  },
-  {
-    "objID": 181,
-    "stationName": "WOODLANDS MRT STATION",
-    "stationNum": "TE2",
-    "x": 22949.0322,
-    "y": 46418.5578,
-    "latitude": 1.436066981,
-    "longitude": 103.7879451,
-    "color": "OTHERS"
-  },
-  {
-    "objID": 175,
-    "stationName": "WOODLANDS SOUTH MRT STATION",
-    "stationNum": "TE3",
-    "x": 23607.8309,
-    "y": 45444.7113,
-    "latitude": 1.427259979,
-    "longitude": 103.7938631,
-    "color": "OTHERS"
+    "line": "RED"
   },
   {
     "objID": 146,
@@ -1837,7 +1817,7 @@
     "y": 35706.3794,
     "latitude": 1.339190046,
     "longitude": 103.8708081,
-    "color": "PURPLE"
+    "line": "PURPLE"
   },
   {
     "objID": 6,
@@ -1847,7 +1827,7 @@
     "y": 42158.0124,
     "latitude": 1.397535018,
     "longitude": 103.7474307,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 41,
@@ -1857,7 +1837,7 @@
     "y": 40413.082,
     "latitude": 1.381756046,
     "longitude": 103.8449439,
-    "color": "RED"
+    "line": "RED"
   },
   {
     "objID": 13,
@@ -1867,6 +1847,6 @@
     "y": 45686.0701,
     "latitude": 1.429443081,
     "longitude": 103.8350045,
-    "color": "RED"
+    "line": "RED"
   }
 ]
