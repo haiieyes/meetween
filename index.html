@@ -10,14 +10,51 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c53d501a9c.js" crossorigin="anonymous"></script>
 
     <title>Meetween: Meet Me in Between!</title>
     
   </head>
   <body>
+    <!-- Show Buttons -->
+    <div id='showButtons'>
+      <div class='showButtonCon' id='showButtonLeft'>
+        <i class="fas fa-angle-right showButtonIndiv"></i>
+      </div>
+      <div class='showButtonCon' id='showButtonRight' >
+        <i class="fas fa-angle-left showButtonIndiv"></i>
+      </div>
+    </div>
     
-    <!-- Main Map -->
-    <div id="map"></div>
+    <!-- Main App -->
+    <div id='mainDiv'>
+      
+      <!-- Person A -->
+      <div id='personA'>
+        <div id='personAComponents'>
+          
+        </div>
+        <div>
+          <button id='personAHideButton' type="button" class="btn btn-outline-light hideButton"><p>Hide</p></button>
+        </div>
+      </div>
+      
+      <!-- Main Map -->
+      <div id='map'></div>
+      
+      <!-- Person B -->
+      <div id='personB'>
+        <div id='personBComponents'>
+          
+        </div>
+        <div>
+          <button id='personBHideButton' type="button" class="btn btn-outline-light hideButton"><p>Hide</p></button>
+        </div>
+      </div>
+    
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

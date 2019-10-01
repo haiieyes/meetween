@@ -21,7 +21,126 @@ time, mark, audio, video {
 }
 
 /* Styles --- */
+
+/* Show Buttons */
+#showButtons {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 50;
+	padding: 50px;
+}
+
+.showButtonIndiv {
+	font-size: 25px;
+}
+
+.showButtonCon {
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.showButtonCon:hover {
+	cursor: pointer;
+}
+
+#showButtonLeft {
+	/*animation-name: show;*/
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: .75s;
+	opacity: 0 !important;
+}
+
+#showButtonRight {
+	/*animation-name: show;*/
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: .75s;
+	opacity: 0 !important;
+}
+
+
+#mainDiv {
+	display: flex;
+	flex-direction: row;
+}
+
+#personA {
+	height: 100vh;
+	flex: 15;
+	background-color: #657786;
+	box-shadow: 0 0 20px rgb(0, 0, 0);
+	z-index: 90;
+	overflow:hidden;
+	
+	animation-duration: .75s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hideButton {
+	width: 150px;
+	margin-bottom: 20px;
+	opacity: 0.5;
+}
+
 #map {
     height: 100vh;
-    width: 100%;
+    flex: 70;
+}
+
+#personB {
+	height: 100vh;
+	flex: 15;
+	background-color: #657786;
+	box-shadow: 0 0 20px rgb(0, 0, 0);
+	z-index: 90;
+	overflow:hidden;
+	
+	animation-duration: .75s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* Animations --- */
+@keyframes hide {
+	0% {flex: 15;}
+	100% {flex:0;}
+}
+
+@keyframes hideReverse {
+	0% {flex:0;}
+	100% {flex: 15;}
+}
+
+@keyframes show {
+	0% {opacity: 0;}
+	100% {opacity:.5;}
+}
+
+@keyframes showReverse {
+	0% {opacity: 0.5;}
+	100% {opacity:0;}
 }
