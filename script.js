@@ -147,6 +147,24 @@ $("#endSelect").change(function(){
   });
 });
 
+// Get directions from Person A to Person B
+function testDirections(){
+  let startIndex = $("#startSelect").val()
+  let endIndex = $("#endSelect").val()
+  axios.get('data/mrtsg.json').then(function(response){
+    let arr = response.data
+    var origin;
+    var destination;
+    
+    origin = arr[startIndex].latitude,arr[startIndex].longitude;
+    destination = arr[endIndex].latitude,arr[endIndex].longitude;
+    let testURL = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&mode=transit&key=${apiKey}`;
+    console.log(testURL)
+    axios.get(testURL).then(function(response){
+      // console.log(response)
+    });
+  });
+}
 
 
 $(function(){
@@ -179,9 +197,4 @@ $(function(){
     $('#personB').css("animation-name", "hideReverse");
     $('#showButtonRight').css("animation-name", "showReverse");
   });
-  
-  
-
-
-  
 });
