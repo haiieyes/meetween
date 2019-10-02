@@ -69,7 +69,7 @@
     "latitude": 1.281873788,
     "longitude": 103.8590733,
     "line": "BLUE",
-    "line2": "CIRCLE"
+    "line2": "YELLOW"
   },
   {
     "objID": 140,
@@ -458,22 +458,14 @@
     "stationName": "DHOBY GHAUT MRT STATION",
     "stationNum": "NS24",
     "station2Num": "NE6",
+    "station3Num": "CC1",
     "x": 29424.1448,
     "y": 31229.3143,
     "latitude": 1.298701307,
     "longitude": 103.8461119,
     "line": "RED",
-    "line2": "PURPLE"
-  },
-  {
-    "objID": 165,
-    "stationName": "DHOBY GHAUT MRT STATION",
-    "stationNum": "CC1",
-    "x": 29437.9401,
-    "y": 31244.9618,
-    "latitude": 1.298842816,
-    "longitude": 103.8462358,
-    "line": "YELLOW"
+    "line2": "PURPLE",
+    "line3": "YELLOW"
   },
   {
     "objID": 29,
@@ -905,7 +897,7 @@
     "latitude": 1.276427355,
     "longitude": 103.8545925,
     "line": "RED",
-    "line2": "CIRCLE"
+    "line2": "YELLOW"
   },
   {
     "objID": 150,

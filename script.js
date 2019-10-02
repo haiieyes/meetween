@@ -73,7 +73,7 @@ axios.get('data/mrtsg.json')
           $('#startSelect').append('<option value="' + eachStation+ '">' + arr[eachStation].stationName + '</option>');
           $('#endSelect').append('<option value="' + eachStation + '">' + arr[eachStation].stationName + '</option>');
           
-          console.log(arr[eachStation].stationName);
+          // console.log(arr[eachStation].stationName);
     }
     
   });
@@ -145,7 +145,7 @@ $("#endSelect").change(function(){
 });
 
 // Get directions from Person A to Person B
-function testDirections(){
+function getDirections(){
   let startIndex = $("#startSelect").val()
   let endIndex = $("#endSelect").val()
   axios.get('data/mrtsg.json').then(function(response){
@@ -155,13 +155,30 @@ function testDirections(){
     
     origin = arr[startIndex].latitude + ',' + arr[startIndex].longitude;
     destination = arr[endIndex].latitude + ',' + arr[endIndex].longitude;
-    let testURL = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&mode=transit&key=${apiKey}`;
-    console.log(testURL)
-    axios.get(testURL).then(function(response){
-      // console.log(response)
+    let url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&mode=transit&key=${apiKey}`;
+    // TEST
+    doCORSRequest({
+        method: this.id === 'post' ? 'POST' : 'GET',
+        url: url,
+      }, function printResult(result) {
+        console.log(result);
     });
   });
 }
+
+// PROXY
+var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+  function doCORSRequest(options, printResult) {
+    var x = new XMLHttpRequest();
+    x.open(options.method, cors_api_url + options.url);
+    x.onload = x.onerror = function() {
+      printResult(x.responseText);
+    };
+    if (/^POST/i.test(options.method)) {
+      x.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    }
+    x.send(options.data);
+  }
 
 
 $(function(){
@@ -194,4 +211,6 @@ $(function(){
     $('#personB').css("animation-name", "hideReverse");
     $('#showButtonRight').css("animation-name", "showReverse");
   });
-});
+  
+  
+  });
