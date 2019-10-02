@@ -63,21 +63,13 @@
     "objID": 115,
     "stationName": "BAYFRONT MRT STATION",
     "stationNum": "DT16",
+    "station2Num": "CE1",
     "x": 30867.0093,
     "y": 29368.625,
     "latitude": 1.281873788,
     "longitude": 103.8590733,
-    "line": "BLUE"
-  },
-  {
-    "objID": 115,
-    "stationName": "BAYFRONT MRT STATION",
-    "stationNum": "CE1",
-    "x": 30867.0093,
-    "y": 29368.625,
-    "latitude": 1.281873788,
-    "longitude": 103.8590733,
-    "line": "CIRCLE"
+    "line": "BLUE",
+    "line2": "CIRCLE"
   },
   {
     "objID": 140,
@@ -143,21 +135,13 @@
     "objID": 109,
     "stationName": "BISHAN MRT STATION",
     "stationNum": "CC15",
+    "station2Num": "NS17",
     "x": 29762.3507,
     "y": 37046.3699,
     "latitude": 1.35130868,
     "longitude": 103.84915,
-    "line": "YELLOW"
-  },
-  {
-    "objID": 158,
-    "stationName": "BISHAN MRT STATION",
-    "stationNum": "NS17",
-    "x": 29649.8988,
-    "y": 36994.433,
-    "latitude": 1.350838988,
-    "longitude": 103.8481398,
-    "line": "RED"
+    "line": "YELLOW",
+    "line2": "RED"
   },
   {
     "objID": 178,
@@ -183,21 +167,13 @@
     "objID": 159,
     "stationName": "BOTANIC GARDENS MRT STATION",
     "stationNum": "DT9",
+    "station2Num": "CC19",
     "x": 26087.2663,
     "y": 33852.4484,
     "latitude": 1.322423979,
     "longitude": 103.8161362,
-    "line": "BLUE"
-  },
-  {
-    "objID": 185,
-    "stationName": "BOTANIC GARDENS MRT STATION",
-    "stationNum": "CC19",
-    "x": 25959.4046,
-    "y": 33817.7525,
-    "latitude": 1.322110193,
-    "longitude": 103.8149876,
-    "line": "YELLOW"
+    "line": "BLUE",
+    "line2": "YELLOW"
   },
   {
     "objID": 182,
@@ -233,21 +209,13 @@
     "objID": 103,
     "stationName": "BUGIS MRT STATION",
     "stationNum": "DT14",
+    "station2Num": "EW12",
     "x": 30620.8769,
     "y": 31323.2495,
     "latitude": 1.299550746,
     "longitude": 103.8568623,
-    "line": "BLUE"
-  },
-  {
-    "objID": 111,
-    "stationName": "BUGIS MRT STATION",
-    "stationNum": "EW12",
-    "x": 30491.5648,
-    "y": 31424.3503,
-    "latitude": 1.300465076,
-    "longitude": 103.8557007,
-    "line": "GREEN"
+    "line": "BLUE",
+    "line2": "GREEN"
   },
   {
     "objID": 32,
@@ -303,21 +271,13 @@
     "objID": 28,
     "stationName": "BUONA VISTA MRT STATION",
     "stationNum": "EW21",
+    "station2Num": "CC22",
     "x": 23200.36,
     "y": 32167.2655,
     "latitude": 1.307183467,
     "longitude": 103.7902028,
-    "line": "GREEN"
-  },
-  {
-    "objID": 124,
-    "stationName": "BUONA VISTA MRT STATION",
-    "stationNum": "CC22",
-    "x": 23251.7611,
-    "y": 32090.7692,
-    "latitude": 1.306491669,
-    "longitude": 103.7906645,
-    "line": "YELLOW"
+    "line": "GREEN",
+    "line2": "YELLOW"
   },
   {
     "objID": 127,
@@ -363,21 +323,13 @@
     "objID": 131,
     "stationName": "CHINATOWN MRT STATION",
     "stationNum": "NE4",
+    "station2Num": "DT19",
     "x": 29124.9585,
     "y": 29643.4786,
     "latitude": 1.284359578,
     "longitude": 103.8434242,
-    "line": "PURPLE"
-  },
-  {
-    "objID": 132,
-    "stationName": "CHINATOWN MRT STATION",
-    "stationNum": "DT19",
-    "x": 29238.9683,
-    "y": 29686.5359,
-    "latitude": 1.284748969,
-    "longitude": 103.8444484,
-    "line": "BLUE"
+    "line": "PURPLE",
+    "line2": "BLUE"
   },
   {
     "objID": 2,
@@ -413,21 +365,13 @@
     "objID": 95,
     "stationName": "CITY HALL MRT STATION",
     "stationNum": "EW13",
+    "station2Num": "NS25",
     "x": 30144.2851,
     "y": 30591.8478,
     "latitude": 1.292936243,
     "longitude": 103.852581,
-    "line": "GREEN"
-  },
-  {
-    "objID": 95,
-    "stationName": "CITY HALL MRT STATION",
-    "stationNum": "NS25",
-    "x": 30144.2851,
-    "y": 30591.8478,
-    "latitude": 1.292936243,
-    "longitude": 103.852581,
-    "line": "RED"
+    "line": "GREEN",
+    "line2": "RED"
   },
   {
     "objID": 157,
@@ -513,21 +457,13 @@
     "objID": 144,
     "stationName": "DHOBY GHAUT MRT STATION",
     "stationNum": "NS24",
+    "station2Num": "NE6",
     "x": 29424.1448,
     "y": 31229.3143,
     "latitude": 1.298701307,
     "longitude": 103.8461119,
-    "line": "RED"
-  },
-  {
-    "objID": 164,
-    "stationName": "DHOBY GHAUT MRT STATION",
-    "stationNum": "NE6",
-    "x": 29354.3681,
-    "y": 31340.3479,
-    "latitude": 1.299705459,
-    "longitude": 103.8454851,
-    "line": "PURPLE"
+    "line": "RED",
+    "line2": "PURPLE"
   },
   {
     "objID": 165,
@@ -583,21 +519,13 @@
     "objID": 18,
     "stationName": "EXPO MRT STATION",
     "stationNum": "CG1",
+    "station2Num": "DT35",
     "x": 42270.6232,
     "y": 35193.6223,
     "latitude": 1.334549778,
     "longitude": 103.9615134,
-    "line": "GREEN"
-  },
-  {
-    "objID": 122,
-    "stationName": "EXPO MRT STATION",
-    "stationNum": "DT35",
-    "x": 42362.7103,
-    "y": 35285.6654,
-    "latitude": 1.335382137,
-    "longitude": 103.9623407,
-    "line": "BLUE"
+    "line": "GREEN",
+    "line2": "BLUE"
   },
   {
     "objID": 48,
@@ -683,21 +611,13 @@
     "objID": 101,
     "stationName": "HARBOURFRONT MRT STATION",
     "stationNum": "NE1",
+    "station2Num": "CC29",
     "x": 26678.3445,
     "y": 27555.0595,
     "latitude": 1.26547264,
     "longitude": 103.821446,
-    "line": "PURPLE"
-  },
-  {
-    "objID": 101,
-    "stationName": "HARBOURFRONT MRT STATION",
-    "stationNum": "CC29",
-    "x": 26678.3445,
-    "y": 27555.0595,
-    "latitude": 1.26547264,
-    "longitude": 103.821446,
-    "line": "YELLOW"
+    "line": "PURPLE",
+    "line2": "YELLOW"
   },
   {
     "objID": 161,
@@ -773,21 +693,13 @@
     "objID": 20,
     "stationName": "JURONG EAST MRT STATION",
     "stationNum": "EW24",
+    "station2Num": "NS1",
     "x": 17869.0806,
     "y": 35038.9472,
     "latitude": 1.33315262,
     "longitude": 103.7423112,
-    "line": "GREEN"
-  },
-  {
-    "objID": 20,
-    "stationName": "JURONG EAST MRT STATION",
-    "stationNum": "NS1",
-    "x": 17869.0806,
-    "y": 35038.9472,
-    "latitude": 1.33315262,
-    "longitude": 103.7423112,
-    "line": "RED"
+    "line": "GREEN",
+    "line2": "RED"
   },
   {
     "objID": 54,
@@ -953,21 +865,13 @@
     "objID": 168,
     "stationName": "LITTLE INDIA MRT STATION",
     "stationNum": "DT12",
+    "station2Num": "NE7",
     "x": 29698.9692,
     "y": 32168.8611,
     "latitude": 1.303916484,
     "longitude": 103.8524167,
-    "line": "BLUE"
-  },
-  {
-    "objID": 169,
-    "stationName": "LITTLE INDIA MRT STATION",
-    "stationNum": "NE7",
-    "x": 29817.1982,
-    "y": 32124.8312,
-    "latitude": 1.307198223,
-    "longitude": 103.8485807,
-    "line": "PURPLE"
+    "line": "BLUE",
+    "line2": "PURPLE"
   },
   {
     "objID": 162,
@@ -983,41 +887,25 @@
     "objID": 94,
     "stationName": "MACPHERSON MRT STATION",
     "stationNum": "CC10",
+    "station2Num": "DT26",
     "x": 34340.0124,
     "y": 34286.1222,
     "latitude": 1.326345372,
     "longitude": 103.8902718,
-    "line": "YELLOW"
-  },
-  {
-    "objID": 105,
-    "stationName": "MACPHERSON MRT STATION",
-    "stationNum": "DT26",
-    "x": 34235.7966,
-    "y": 34256.4317,
-    "latitude": 1.326076883,
-    "longitude": 103.8893356,
-    "line": "BLUE"
+    "line": "YELLOW",
+    "line2": "BLUE"
   },
   {
     "objID": 128,
     "stationName": "MARINA BAY MRT STATION",
     "stationNum": "NS27",
+    "station2Num": "CE2",
     "x": 30368.2057,
     "y": 28766.3819,
     "latitude": 1.276427355,
     "longitude": 103.8545925,
-    "line": "RED"
-  },
-  {
-    "objID": 129,
-    "stationName": "MARINA BAY MRT STATION",
-    "stationNum": "CE2",
-    "x": 30423.4296,
-    "y": 28735.7843,
-    "latitude": 1.276150637,
-    "longitude": 103.8550886,
-    "line": "CIRCLE"
+    "line": "RED",
+    "line2": "CIRCLE"
   },
   {
     "objID": 150,
@@ -1083,21 +971,13 @@
     "objID": 133,
     "stationName": "NEWTON MRT STATION",
     "stationNum": "DT11",
+    "station2Num": "NS21",
     "x": 28499.9628,
     "y": 32877.5173,
     "latitude": 1.313607102,
     "longitude": 103.8378098,
-    "line": "BLUE"
-  },
-  {
-    "objID": 191,
-    "stationName": "NEWTON MRT STATION",
-    "stationNum": "NS21",
-    "x": 28519.3616,
-    "y": 32735.2072,
-    "latitude": 1.3123201,
-    "longitude": 103.8379841,
-    "line": "RED"
+    "line": "BLUE",
+    "line2": "RED"
   },
   {
     "objID": 52,
@@ -1163,21 +1043,13 @@
     "objID": 156,
     "stationName": "OUTRAM PARK MRT STATION",
     "stationNum": "NE3",
+    "station2Num": "EW16",
     "x": 28696.2602,
     "y": 29135.382,
     "latitude": 1.28140498,
     "longitude": 103.839125,
-    "line": "PURPLE"
-  },
-  {
-    "objID": 188,
-    "stationName": "OUTRAM PARK MRT STATION",
-    "stationNum": "EW16",
-    "x": 28646.3739,
-    "y": 29316.7727,
-    "latitude": 1.279764543,
-    "longitude": 103.8395732,
-    "line": "GREEN"
+    "line": "PURPLE",
+    "line2": "GREEN"
   },
   {
     "objID": 155,
@@ -1203,21 +1075,13 @@
     "objID": 9,
     "stationName": "PAYA LEBAR MRT STATION",
     "stationNum": "EW8",
+    "station2Num": "CC9",
     "x": 34648.6773,
     "y": 33375.7341,
     "latitude": 1.318112082,
     "longitude": 103.8930446,
-    "line": "GREEN"
-  },
-  {
-    "objID": 152,
-    "stationName": "PAYA LEBAR MRT STATION",
-    "stationNum": "CC9",
-    "x": 34550.5756,
-    "y": 33300.3402,
-    "latitude": 1.317430268,
-    "longitude": 103.8921633,
-    "line": "YELLOW"
+    "line": "GREEN",
+    "line2": "YELLOW"
   },
   {
     "objID": 76,
@@ -1273,21 +1137,13 @@
     "objID": 102,
     "stationName": "PROMENADE MRT STATION",
     "stationNum": "DT15",
+    "station2Num": "CC4",
     "x": 31064.3414,
     "y": 30586.9146,
     "latitude": 1.292891552,
     "longitude": 103.860846,
-    "line": "BLUE"
-  },
-  {
-    "objID": 184,
-    "stationName": "PROMENADE MRT STATION",
-    "stationNum": "CC4",
-    "x": 31080.6082,
-    "y": 30623.0174,
-    "latitude": 1.293218051,
-    "longitude": 103.8609921,
-    "line": "YELLOW"
+    "line": "BLUE",
+    "line2": "YELLOW"
   },
   {
     "objID": 50,
@@ -1333,21 +1189,13 @@
     "objID": 186,
     "stationName": "RAFFLES PLACE MRT STATION",
     "stationNum": "EW14",
+    "station2Num": "NS26",
     "x": 30019.1805,
     "y": 29617.6126,
     "latitude": 1.284125611,
     "longitude": 103.8514572,
-    "line": "GREEN"
-  },
-  {
-    "objID": 186,
-    "stationName": "RAFFLES PLACE MRT STATION",
-    "stationNum": "NS26",
-    "x": 30019.1805,
-    "y": 29617.6126,
-    "latitude": 1.284125611,
-    "longitude": 103.8514572,
-    "line": "RED"
+    "line": "GREEN",
+    "line2": "RED"
   },
   {
     "objID": 89,
@@ -1483,21 +1331,13 @@
     "objID": 145,
     "stationName": "SERANGOON MRT STATION",
     "stationNum": "CC13",
+    "station2Num": "NE12",
     "x": 32345.7724,
     "y": 36967.5123,
     "latitude": 1.350595256,
     "longitude": 103.8723572,
-    "line": "YELLOW"
-  },
-  {
-    "objID": 148,
-    "stationName": "SERANGOON MRT STATION",
-    "stationNum": "NE12",
-    "x": 32480.0726,
-    "y": 36869.3924,
-    "latitude": 1.349707875,
-    "longitude": 103.8735637,
-    "line": "PURPLE"
+    "line": "YELLOW",
+    "line2": "PURPLE"
   },
   {
     "objID": 10,
@@ -1603,21 +1443,13 @@
     "objID": 11,
     "stationName": "TAMPINES MRT STATION",
     "stationNum": "EW2",
+    "station2Num": "DT32",
     "x": 40445.4297,
     "y": 37266.9909,
     "latitude": 1.353301356,
     "longitude": 103.9451175,
-    "line": "GREEN"
-  },
-  {
-    "objID": 142,
-    "stationName": "TAMPINES MRT STATION",
-    "stationNum": "DT32",
-    "x": 40213.0284,
-    "y": 37463.3697,
-    "latitude": 1.355077429,
-    "longitude": 103.9430298,
-    "line": "BLUE"
+    "line": "GREEN",
+    "line2": "BLUE"
   },
   {
     "objID": 97,

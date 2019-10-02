@@ -70,14 +70,10 @@ axios.get('data/mrtsg.json')
     let arr = response.data;
     
     for (let eachStation = 0; eachStation< arr.length; eachStation++){
-      // for (let eachStation2 = 0; eachStation2<= arr.length; eachStation2++){
-      //   if (arr[eachStation].stationName != arr[eachStation2].stationName){
           $('#startSelect').append('<option value="' + eachStation+ '">' + arr[eachStation].stationName + '</option>');
           $('#endSelect').append('<option value="' + eachStation + '">' + arr[eachStation].stationName + '</option>');
           
           console.log(arr[eachStation].stationName);
-        // }
-      // }
     }
     
   });
@@ -99,6 +95,7 @@ $("#startSelect").change(function(){
     let marker = new google.maps.Marker({
       position: {lat: arr[index].latitude, lng: arr[index].longitude},
       map: map,
+      animation: google.maps.Animation.DROP,
     });
     
     // Fly to Marker
@@ -107,7 +104,7 @@ $("#startSelect").change(function(){
     
     // Create InfoWindow
     let infowindow = new google.maps.InfoWindow({
-      content: ('<h1>' + arr[index].stationName + '</h1>')
+      content: ('<span jstcache="13">' + arr[index].stationName + '</span>')
     });
     marker.addListener('click', function() {
       infowindow.open(map, marker);
@@ -156,8 +153,8 @@ function testDirections(){
     var origin;
     var destination;
     
-    origin = arr[startIndex].latitude,arr[startIndex].longitude;
-    destination = arr[endIndex].latitude,arr[endIndex].longitude;
+    origin = arr[startIndex].latitude + ',' + arr[startIndex].longitude;
+    destination = arr[endIndex].latitude + ',' + arr[endIndex].longitude;
     let testURL = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&mode=transit&key=${apiKey}`;
     console.log(testURL)
     axios.get(testURL).then(function(response){
