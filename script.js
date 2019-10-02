@@ -2,6 +2,7 @@
 /* global $ */
 /* global axios */
 /* global jQuery */
+/* global Math */
 
 var map;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
@@ -110,6 +111,11 @@ $("#startSelect").change(function(){
       infowindow.open(map, marker);
     });
   });
+  
+  // Start if meet requirements
+  if ($('#endSelect') != '#'){
+    getDirections();
+  }
 });
 
 // Person B
@@ -142,14 +148,19 @@ $("#endSelect").change(function(){
       infowindow.open(map, marker);
     });
   });
+  
+  // Start if meet requirements
+  if ($('#startSelect') != '#'){
+    getDirections();
+  }
 });
 
-// Get directions from Person A to Person B
+// Get directions from Person A to Person B --
 function getDirections(){
-  let startIndex = $("#startSelect").val()
-  let endIndex = $("#endSelect").val()
+  let startIndex = $("#startSelect").val();
+  let endIndex = $("#endSelect").val();
   axios.get('data/mrtsg.json').then(function(response){
-    let arr = response.data
+    let arr = response.data;
     var origin;
     var destination;
     
@@ -161,14 +172,65 @@ function getDirections(){
         method: this.id === 'post' ? 'POST' : 'GET',
         url: url,
       }, function printResult(result) {
-        console.log(result);
-    });
+        let responseData = (JSON.parse(result));
+        
+        // Usage of Response Data --
+        let totalStops = 0;
+        let waypoints = [];
+        
+        // Number of lines required to travel
+        for (let x = 0 ; x < responseData.routes[0].legs[0].steps.length ; x++){
+          if (responseData.routes[0].legs[0].steps[x].travel_mode == "TRANSIT"){
+            waypoints.push(responseData.routes[0].legs[0].steps[x]);
+          }
+        }
+        
+        // For when there is a need for a line change
+        if (waypoints.length > 1){
+          
+          let lineChangesStations = [];
+          for (let eachLineChange = 0; eachLineChange < waypoints.length; eachLineChange++){
+            
+            // Adding different line changes
+            let x = responseData.routes[0].legs[0].steps[eachLineChange].transit_details.line.name;
+            lineChangesStations.push(x);
+
+            
+            // Add amount of stops to totalStops
+            totalStops = totalStops + parseInt(responseData.routes[0].legs[0].steps[eachLineChange].transit_details.num_stops);
+          }
+          // Find midpoint
+          let midpoint = Math.floor(totalStops/2);
+          
+          // Find midpoint station
+          for (let x = 0 ; x < lineChangesStations.length ; x++){
+            if (midpoint <= responseData.routes[0].legs[0].steps[x].transit_details.num_stops){
+              alert(responseData.routes[0].legs[0].steps[x].transit_details.line.name);
+              break
+            };
+          };  
+          alert(midpoint);
+        } else {
+          
+          // For when there is no need for a line change
+          totalStops = waypoints[0].transit_details.num_stops;
+          // Find midpoint
+          let midpoint = Math.floor(totalStops/2);
+          alert(midpoint);
+          }
+          
+          
+          
+        }
+        
+        
+    );
   });
 }
 
 // PROXY
 var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
-  function doCORSRequest(options, printResult) {
+function doCORSRequest(options, printResult) {
     var x = new XMLHttpRequest();
     x.open(options.method, cors_api_url + options.url);
     x.onload = x.onerror = function() {
