@@ -7,6 +7,7 @@
 var map;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
 
+
 // Simple Map --
 let mapOptions = {
   'center': {lat: 1.3521, lng: 103.8198},
@@ -155,7 +156,7 @@ $("#endSelect").change(function(){
   }
 });
 
-// Get directions from Person A to Person B --
+// Get directions from Person A to Person B and Midpoint --
 function getDirections(){
   let startIndex = $("#startSelect").val();
   let endIndex = $("#endSelect").val();
@@ -163,6 +164,7 @@ function getDirections(){
     let arr = response.data;
     var origin;
     var destination;
+    let startPoint = arr[startIndex].stationName;
     
     origin = arr[startIndex].latitude + ',' + arr[startIndex].longitude;
     destination = arr[endIndex].latitude + ',' + arr[endIndex].longitude;
@@ -216,19 +218,81 @@ function getDirections(){
           totalStops = waypoints[0].transit_details.num_stops;
           // Find midpoint
           let midpoint = Math.floor(totalStops/2);
-          alert(midpoint);
+          let lineDirection = waypoints[0].transit_details.headsign;
+          let line = waypoints[0].transit_details.line.name;
+          alert(midpoint + ' stops towards ' + lineDirection + ' on the ' + line);
+          alert(startPoint)
+          
+          let results = getMidpointStation(startPoint, midpoint, lineDirection, line);
+          // alertingTest(results);
           }
-          
-          
-          
         }
-        
-        
     );
   });
 }
 
-// PROXY
+// Get Midpoint station --
+function getMidpointStation(startPoint, midpoint, lineDirection, line){
+  var midpointIndex;
+  var midpointStationName;
+  // Midpoint is the integer/number of stops from current point to midpoint eg.15
+  // lineDirection is the last station of the direction if you were to stay on the same line eg. 'Pasir Ris'
+  // line is the name of the current train line eg. 'East West Line'
+  
+  // Converting format of line name to format  of 'line' in JSON file (Might have a few lines, up to 3, in the same station)
+  if (line == 'North South Line'){
+    line = 'RED';
+  } else if (line == 'East West Line'){
+    line = 'GREEN';
+    axios.get('data/green.json')
+    .then(function(response){
+      for (let i=0 ; i < response.data.length ; i++){
+        
+        if (startPoint == response.data[i].stationName){
+          // alert(response.data[i].stationName)
+          // console.log('Current Index: ' + i);
+          // console.log('How many to midpoint index: ' + midpoint);
+          // console.log(typeof midpoint);
+          // console.log(lineDirection);
+          if (lineDirection == 'Pasir Ris'){
+            let midpointIndex = i - midpoint;
+            alert('towards pr')
+            // console.log('Midpoint Index: ' + midpointIndex);
+            let midpointStationName = response.data[midpointIndex].stationName;
+            console.log(midpointStationName)
+            return midpointStationName;
+  
+          } else {
+            let midpointIndex = i + midpoint;
+            alert('not towards pr')
+            // console.log('Midpoint Index: ' + midpointIndex);
+            let midpointStationName = response.data[midpointIndex].stationName;
+            console.log(midpointStationName)
+            return midpointStationName;
+          }
+        }
+      }
+      
+        
+    }); // DONE
+  } else if (line == 'North East Line'){
+    line = 'PURPLE';
+  } else if (line == 'Circle Line'){
+    line = 'YELLOW';
+  } else if (line == 'Downtown Line'){
+    line = 'BLUE';
+  } else if (line == 'Punggol LRT'){
+    line = 'P-LRT';
+  } else if (line == 'Sengkang LRT'){
+    line = 'S-LRT';
+  } else if (line == 'Bukit Panjang LRT'){
+    line = 'BP-LRT';
+  }
+  
+  
+}
+
+// Proxy
 var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 function doCORSRequest(options, printResult) {
     var x = new XMLHttpRequest();
@@ -241,7 +305,6 @@ function doCORSRequest(options, printResult) {
     }
     x.send(options.data);
   }
-
 
 $(function(){
     
