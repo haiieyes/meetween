@@ -29,7 +29,7 @@ html, body {
 /* Styles --- */
 /* Top Console */
 #topConsole {
-	width: 40%;
+	width: 20%;
 	height: 100px;
 	background-color: #38A1F3;
 	position: absolute;
@@ -40,12 +40,15 @@ html, body {
 	
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
 #logo {
-	border: 2px solid black;
+	/*border: 2px solid black;*/
+	background-image: url('images/meetweenLogo.png');
+	background-size: cover;
+	background-position: center;
 	width: 300px;
 	height: 70px;
 	display: flex;

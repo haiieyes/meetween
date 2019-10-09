@@ -234,6 +234,7 @@ function getDirections(){
 function getMidpointStation(startPoint, midpoint, lineDirection, line){
   var midpointIndex;
   var midpointStationName;
+  
   // Midpoint is the integer/number of stops from current point to midpoint eg.15
   // lineDirection is the last station of the direction if you were to stay on the same line eg. 'Pasir Ris'
   // line is the name of the current train line eg. 'East West Line'
@@ -365,8 +366,9 @@ function getNearbyPOI(lat, long){
           break
         }
       
-        
+      
       }
+
     });
 };
 
