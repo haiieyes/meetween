@@ -39,7 +39,7 @@ function makeInfoWindowEvent(map, infowindow, marker) {
 // Adding a Test Group of Markers Function --
 function showAllMRT(){
   
-  axios.get('data/mrtsg.json')
+  axios.get('data/green.json')
     .then(function(response){
       
     let arr = response.data;
@@ -66,7 +66,7 @@ function showAllMRT(){
 }
 
 // Add MRT Stations to selectors --
-axios.get('data/mrtsg.json')
+axios.get('data/green.json')
   .then(function(response){
 
     let arr = response.data;
@@ -86,7 +86,7 @@ $("#startSelect").change(function(){
   // clearMarkers();
   
   // Find index
-  axios.get('data/mrtsg.json').then(function(response){
+  axios.get('data/green.json').then(function(response){
     
     let arr = response.data;
     let index = $("#startSelect").val();
@@ -124,7 +124,7 @@ $("#endSelect").change(function(){
   // clearMarkers();
   
   // Find index
-  axios.get('data/mrtsg.json').then(function(response){
+  axios.get('data/green.json').then(function(response){
     
     let arr = response.data;
     let index = $("#endSelect").val();
@@ -160,7 +160,7 @@ $("#endSelect").change(function(){
 function getDirections(){
   let startIndex = $("#startSelect").val();
   let endIndex = $("#endSelect").val();
-  axios.get('data/mrtsg.json').then(function(response){
+  axios.get('data/green.json').then(function(response){
     let arr = response.data;
     var origin;
     var destination;
@@ -169,7 +169,7 @@ function getDirections(){
     origin = arr[startIndex].latitude + ',' + arr[startIndex].longitude;
     destination = arr[endIndex].latitude + ',' + arr[endIndex].longitude;
     let url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&mode=transit&key=${apiKey}`;
-    // TEST
+
     doCORSRequest({
         method: this.id === 'post' ? 'POST' : 'GET',
         url: url,
@@ -207,11 +207,11 @@ function getDirections(){
           // Find midpoint station
           for (let x = 0 ; x < lineChangesStations.length ; x++){
             if (midpoint <= responseData.routes[0].legs[0].steps[x].transit_details.num_stops){
-              alert(responseData.routes[0].legs[0].steps[x].transit_details.line.name);
+              // alert(responseData.routes[0].legs[0].steps[x].transit_details.line.name);
               break
             };
           };  
-          alert(midpoint);
+          // alert(midpoint);
         } else {
           
           // For when there is no need for a line change
@@ -220,11 +220,10 @@ function getDirections(){
           let midpoint = Math.floor(totalStops/2);
           let lineDirection = waypoints[0].transit_details.headsign;
           let line = waypoints[0].transit_details.line.name;
-          alert(midpoint + ' stops towards ' + lineDirection + ' on the ' + line);
-          alert(startPoint)
+          // alert(midpoint + ' stops towards ' + lineDirection + ' on the ' + line);
+          // alert(startPoint)
           
-          let results = getMidpointStation(startPoint, midpoint, lineDirection, line);
-          // alertingTest(results);
+          getMidpointStation(startPoint, midpoint, lineDirection, line);
           }
         }
     );
@@ -238,12 +237,8 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
   // Midpoint is the integer/number of stops from current point to midpoint eg.15
   // lineDirection is the last station of the direction if you were to stay on the same line eg. 'Pasir Ris'
   // line is the name of the current train line eg. 'East West Line'
-  
-  // Converting format of line name to format  of 'line' in JSON file (Might have a few lines, up to 3, in the same station)
-  if (line == 'North South Line'){
-    line = 'RED';
-  } else if (line == 'East West Line'){
-    line = 'GREEN';
+  if (line == 'East West Line'){
+    line = 'green';
     axios.get('data/green.json')
     .then(function(response){
       for (let i=0 ; i < response.data.length ; i++){
@@ -256,40 +251,84 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
           // console.log(lineDirection);
           if (lineDirection == 'Pasir Ris'){
             let midpointIndex = i - midpoint;
-            alert('towards pr')
+            // alert('towards pr')
             // console.log('Midpoint Index: ' + midpointIndex);
             let midpointStationName = response.data[midpointIndex].stationName;
-            console.log(midpointStationName)
-            return midpointStationName;
+            let midpointStationLat = response.data[midpointIndex].latitude;
+            let midpointStationLong = response.data[midpointIndex].longitude;
+            midpointFocus(midpointStationName, midpointIndex, line)
+            getNearbyPOI(midpointStationLat, midpointStationLong)
+            break;
   
           } else {
             let midpointIndex = i + midpoint;
-            alert('not towards pr')
+            // alert('not towards pr')
             // console.log('Midpoint Index: ' + midpointIndex);
             let midpointStationName = response.data[midpointIndex].stationName;
-            console.log(midpointStationName)
-            return midpointStationName;
+            let midpointStationLat = response.data[midpointIndex].latitude;
+            let midpointStationLong = response.data[midpointIndex].longitude;
+            midpointFocus(midpointStationName, midpointIndex, line)
+            getNearbyPOI(midpointStationLat, midpointStationLong)
+            break;
           }
         }
       }
       
         
     }); // DONE
-  } else if (line == 'North East Line'){
-    line = 'PURPLE';
-  } else if (line == 'Circle Line'){
-    line = 'YELLOW';
-  } else if (line == 'Downtown Line'){
-    line = 'BLUE';
-  } else if (line == 'Punggol LRT'){
-    line = 'P-LRT';
-  } else if (line == 'Sengkang LRT'){
-    line = 'S-LRT';
-  } else if (line == 'Bukit Panjang LRT'){
-    line = 'BP-LRT';
-  }
   
   
+}
+}
+
+// Map-focus on Midpoint station --
+function midpointFocus(midpointStationName, midpointIndex, line){
+  // alert(midpointStationName);
+  // alert(line);
+  let url = 'data/'+line+'.json';
+  // console.log(url);
+  axios.get(url).then(function(response){
+    
+    let arr = response.data;
+    let index = midpointIndex;
+
+    // Create Marker
+    let myLatLng = {lat: arr[index].latitude, lng: arr[index].longitude};
+    let marker = new google.maps.Marker({
+      position: {lat: arr[index].latitude, lng: arr[index].longitude},
+      map: map,
+      animation: google.maps.Animation.DROP,
+    });
+    
+    // Fly to Marker
+    map.panTo(myLatLng);
+    map.setZoom(17);
+    
+    // Create InfoWindow
+    let infowindow = new google.maps.InfoWindow({
+      content: ('<span jstcache="13">' + arr[index].stationName + '</span>')
+    });
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  });
+};
+
+// Show Nearby places of interest --
+function getNearbyPOI(lat, long){
+  let location = lat + ',' + long;
+  let radius = 100;
+  let type = 'point_of_interest';
+  let url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=${radius}&type=${type}&key=${apiKey}`;
+
+  doCORSRequest({
+      method: this.id === 'post' ? 'POST' : 'GET',
+      url: url,
+    }, function printResult(result) {
+      let responseData = (JSON.parse(result));
+      console.log(responseData);
+      
+    });
 }
 
 // Proxy
