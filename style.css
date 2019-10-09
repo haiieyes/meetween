@@ -34,7 +34,7 @@ html, body {
 	background-color: #38A1F3;
 	position: absolute;
 	z-index: 100;
-	margin-left: 50%;
+	margin-left: 66.6%;
 	transform: translateX(-50%); 
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	
@@ -148,6 +148,36 @@ html, body {
     height: 100vh;
     flex: 60;
 }
+
+#midpointResult {
+	height: 30px;
+	width: 100%;
+	border: 1px solid red;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+#stationNum {
+	flex: 1;
+	border: 1px solid red;
+}
+
+#stationName {
+	flex: 3;
+	border: 1px solid red;
+}
+
+
+#places {
+	height: 500px;
+	width: 100%;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: column;
+}
+
+
 
 
 

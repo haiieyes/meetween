@@ -42,6 +42,7 @@
       
       <!-- Person A -->
       <div id='personA'>
+        <!-- Searchbars -->
         <div id='personAComponents'>
           
           <!-- Person A Select -->
@@ -52,8 +53,36 @@
           <select class="form-control" id='endSelect'>
             <option value="#" selected disabled>Where's your friend?</option>
           </select>
+
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="checked">
+            <label class="custom-control-label" for="customSwitch1"><p>Show Restaurants</p></label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2" checked="checked">
+            <label class="custom-control-label" for="customSwitch1"><p>Show Cafes</p></label>
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="checked">
+            <label class="custom-control-label" for="customSwitch1"><p>Show Parks</p></label>
+          </div>
+
           
         </div>
+        
+        <!-- Places -->
+        <div id='places'>
+          
+          <div id='midpointResult'>
+            <div id='stationNum'></div>
+            <div id='stationName'></div>
+          </div>
+          
+          <div class="card" id='cards'></div>
+          
+        </div>
+        
+        <!-- Hide Button-->
         <div>
           <button id='personAHideButton' type="button" class="btn btn-outline-light hideButton"><p>Hide</p></button>
         </div>

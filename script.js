@@ -254,10 +254,15 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
             // alert('towards pr')
             // console.log('Midpoint Index: ' + midpointIndex);
             let midpointStationName = response.data[midpointIndex].stationName;
+            let midpointStationNum = response.data[midpointIndex].stationNum;
             let midpointStationLat = response.data[midpointIndex].latitude;
             let midpointStationLong = response.data[midpointIndex].longitude;
             midpointFocus(midpointStationName, midpointIndex, line)
             getNearbyPOI(midpointStationLat, midpointStationLong)
+            
+            $('#stationNum').html('<p>' + midpointStationNum + '</p>');
+            $('#stationName').html('<p>' + midpointStationName + '</p>');
+            
             break;
   
           } else {
@@ -265,10 +270,15 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
             // alert('not towards pr')
             // console.log('Midpoint Index: ' + midpointIndex);
             let midpointStationName = response.data[midpointIndex].stationName;
+            let midpointStationNum = response.data[midpointIndex].stationNum;
             let midpointStationLat = response.data[midpointIndex].latitude;
             let midpointStationLong = response.data[midpointIndex].longitude;
             midpointFocus(midpointStationName, midpointIndex, line)
             getNearbyPOI(midpointStationLat, midpointStationLong)
+            
+            $('#stationNum').html('<p>' + midpointStationNum + '</p>');
+            $('#stationName').html('<p>' + midpointStationName + '</p>');
+            
             break;
           }
         }
@@ -327,9 +337,38 @@ function getNearbyPOI(lat, long){
     }, function printResult(result) {
       let responseData = (JSON.parse(result));
       console.log(responseData);
+      console.log(url);
       
+      let i = 0;
+      
+      for (let each of responseData.results){
+        // Create Marker
+        let myLatLng = {lat: each.geometry.location.lat, lng: each.geometry.location.lng};
+        let marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+        });
+        
+        // Create Cards
+        let locationName = each.name;
+        $('#cards').append(
+          `
+          <div class="card-body">
+              <h5 class="card-title">${locationName}</h5>
+            </div>
+          `
+          )
+          
+        i++;
+        
+        if (i == 7){
+          break
+        }
+      
+        
+      }
     });
-}
+};
 
 // Proxy
 var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
