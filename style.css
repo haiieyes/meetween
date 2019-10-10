@@ -29,8 +29,8 @@ html, body {
 /* Styles --- */
 /* Top Console */
 #topConsole {
-	width: 20%;
-	height: 100px;
+	width: 25%;
+	height: 150px;
 	background-color: #38A1F3;
 	position: absolute;
 	z-index: 100;
@@ -49,8 +49,8 @@ html, body {
 	background-image: url('images/meetweenLogo.png');
 	background-size: cover;
 	background-position: center;
-	width: 300px;
-	height: 70px;
+	width: 400px;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,6 +60,15 @@ html, body {
 	width: 200px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.latoFont {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+.whiteText {
+	color: white;
 }
 
 #endSelect {
@@ -155,7 +164,6 @@ html, body {
 #midpointResult {
 	height: 30px;
 	width: 100%;
-	border: 1px solid red;
 	
 	display: flex;
 	flex-direction: row;
@@ -163,12 +171,18 @@ html, body {
 
 #stationNum {
 	flex: 1;
-	border: 1px solid red;
+	background-color: #029644;
+	border-radius: 25%;
+	color: white;
+	text-align: center;
+	transform: scale(.75);
+	font-family: 'Lato', sans-serif;
 }
 
 #stationName {
 	flex: 3;
-	border: 1px solid red;
+	font-family: 'Lato', sans-serif;
+	color: white;
 }
 
 

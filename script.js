@@ -355,7 +355,7 @@ function getNearbyPOI(lat, long){
         $('#cards').append(
           `
           <div class="card-body">
-              <h5 class="card-title">${locationName}</h5>
+              <h5 class="card-title latoFont">${locationName}</h5>
             </div>
           `
           )
