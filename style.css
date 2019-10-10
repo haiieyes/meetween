@@ -174,15 +174,21 @@ html, body {
 	background-color: #029644;
 	border-radius: 25%;
 	color: white;
-	text-align: center;
 	transform: scale(.75);
 	font-family: 'Lato', sans-serif;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #stationName {
 	flex: 3;
 	font-family: 'Lato', sans-serif;
 	color: white;
+	
+	display: flex;
+	align-items: center;
 }
 
 
