@@ -5,8 +5,14 @@
 /* global Math */
 
 var map;
+var midpointStationLat;
+var midpointStationLong;
 const apiKey = 'AIzaSyClkwA2bhQgm9NvlqmpOixUuXSQSUQ52uE';
-
+let locationsMarkers = [];
+let stationsMarkers = [];
+let switchOptions = ['Parks', 'Restaurants', 'Cafe'];
+let locationType = 'park';
+let midpointArr = [];
 
 // Simple Map --
 let mapOptions = {
@@ -83,7 +89,7 @@ axios.get('data/green.json')
 // When MRT is changed, place marker --
 // Person A
 $("#startSelect").change(function(){
-  // clearMarkers();
+  // clearStationsMarkers();
   
   // Find index
   axios.get('data/green.json').then(function(response){
@@ -99,6 +105,8 @@ $("#startSelect").change(function(){
       map: map,
       animation: google.maps.Animation.DROP,
     });
+    
+    stationsMarkers.push(marker);
     
     // Fly to Marker
     map.panTo(myLatLng);
@@ -136,6 +144,8 @@ $("#endSelect").change(function(){
       position: {lat: arr[index].latitude, lng: arr[index].longitude},
       map: map,
     });
+    
+    stationsMarkers.push(marker);
     
     // Fly to Marker
     map.panTo(myLatLng);
@@ -232,6 +242,7 @@ function getDirections(){
 
 // Get Midpoint station --
 function getMidpointStation(startPoint, midpoint, lineDirection, line){
+  midpointArr = [];
   var midpointIndex;
   var midpointStationName;
   
@@ -257,7 +268,9 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
             let midpointStationName = response.data[midpointIndex].stationName;
             let midpointStationNum = response.data[midpointIndex].stationNum;
             let midpointStationLat = response.data[midpointIndex].latitude;
+            midpointArr.push(midpointStationLat);
             let midpointStationLong = response.data[midpointIndex].longitude;
+            midpointArr.push(midpointStationLong);
             midpointFocus(midpointStationName, midpointIndex, line)
             getNearbyPOI(midpointStationLat, midpointStationLong)
             
@@ -273,7 +286,9 @@ function getMidpointStation(startPoint, midpoint, lineDirection, line){
             let midpointStationName = response.data[midpointIndex].stationName;
             let midpointStationNum = response.data[midpointIndex].stationNum;
             let midpointStationLat = response.data[midpointIndex].latitude;
+            midpointArr.push(midpointStationLat);
             let midpointStationLong = response.data[midpointIndex].longitude;
+            midpointArr.push(midpointStationLong);
             midpointFocus(midpointStationName, midpointIndex, line)
             getNearbyPOI(midpointStationLat, midpointStationLong)
             
@@ -311,6 +326,8 @@ function midpointFocus(midpointStationName, midpointIndex, line){
       animation: google.maps.Animation.DROP,
     });
     
+    stationsMarkers.push(marker);
+    
     // Fly to Marker
     map.panTo(myLatLng);
     map.setZoom(17);
@@ -328,10 +345,10 @@ function midpointFocus(midpointStationName, midpointIndex, line){
 // Show Nearby places of interest --
 function getNearbyPOI(lat, long){
   let location = lat + ',' + long;
-  let radius = 100;
-  let type = 'point_of_interest';
+  let radius = 1000;
+  let type = locationType;
   let url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=${radius}&type=${type}&key=${apiKey}`;
-
+  
   doCORSRequest({
       method: this.id === 'post' ? 'POST' : 'GET',
       url: url,
@@ -349,6 +366,8 @@ function getNearbyPOI(lat, long){
           position: myLatLng,
           map: map,
         });
+        
+        locationsMarkers.push(marker);
         
         // Create Cards
         let locationName = each.name;
@@ -371,6 +390,27 @@ function getNearbyPOI(lat, long){
 
     });
 };
+
+
+// Clear Markers --
+function clearLocationsMarkers(){
+  for (let each of locationsMarkers){
+    each.setMap(null);
+  }
+  locationsMarkers = [];
+  
+}
+function clearStationsMarkers(){
+  for (let each of stationsMarkers){
+    each.setMap(null);
+  }
+  stationsMarkers = [];
+}
+
+// Clear Cards --
+function clearCards(){
+  $('#cards').empty();
+}
 
 // Proxy
 var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
@@ -417,5 +457,39 @@ $(function(){
     $('#showButtonRight').css("animation-name", "showReverse");
   });
   
+  
+  // Logo acts as reset button --
+  $('#logo').click(function(){
+    clearLocationsMarkers()
+    clearStationsMarkers()
+    clearCards()
+    
+    // Fly to Center
+    map.panTo({lat: 1.3521, lng: 103.8198});
+    map.setZoom(12);
+  });
+  
+  // Switch Button --
+  // Show Current Button Value
+  $('#switch').text('Showing '+ switchOptions[0]);
+  
+  
+  // Change Button Value
+  $('#switch').click(function(){
+    let current = $('#switch').text();
+    if (current == 'Showing Parks'){
+      $('#switch').text('Showing '+ switchOptions[1]);
+      locationType = 'restaurant';
+    } else if (current == 'Showing Restaurants'){
+      $('#switch').text('Showing '+ switchOptions[2]);
+      locationType = 'cafe';
+    } else {
+      $('#switch').text('Showing '+ switchOptions[0]);
+      locationType = 'park';
+    }
+    clearLocationsMarkers();
+    clearCards();
+    getNearbyPOI(midpointArr[0], midpointArr[1]);
+  });
   
   });

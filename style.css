@@ -54,6 +54,8 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 100%;
+	cursor: pointer;
 }
 
 #startSelect {
@@ -75,6 +77,8 @@ html, body {
 	width: 200px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
 
 /* Show Buttons */
@@ -200,7 +204,9 @@ html, body {
 	flex-direction: column;
 }
 
-
+#switch {
+	width: 200px;
+}
 
 
 
